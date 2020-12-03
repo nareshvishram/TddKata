@@ -14,7 +14,10 @@ public class StringCalculator {
 			return sum;
 	}
 	public int stringToInteger(String s){
-		return Integer.parseInt(s);
+		int num=Integer.parseInt(s);
+		if (num<0)
+			throw new IllegalArgumentException("Negatives Not Allowed") ;
+		return num;
 	}
 
 }
