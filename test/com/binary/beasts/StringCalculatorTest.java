@@ -1,6 +1,6 @@
 package com.binary.beasts;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -26,5 +26,10 @@ public class StringCalculatorTest {
 	public void unknownAmoutOfNumbers(){
 		assertEquals(100, sc.add("10,20,30,40"));
 	}
+	@Test
+	public void newLineDelimeter(){
+		assertEquals(3, sc.add("1\n2"));
+	}
+	
 
 }
