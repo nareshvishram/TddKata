@@ -22,5 +22,9 @@ public class StringCalculatorTest {
 		assertEquals(11,sc.add("11"));
 		assertEquals(11,sc.add("5,6"));
 	}
+	@Test 
+	public void unknownAmoutOfNumbers(){
+		assertEquals(100, sc.add("10,20,30,40"));
+	}
 
 }
