@@ -17,6 +17,9 @@ public class StringCalculator {
 		int num=Integer.parseInt(s);
 		if (num<0)
 			throw new IllegalArgumentException("Negatives Not Allowed") ;
+		else if(num>1000)
+			return 0;
+		else
 		return num;
 	}
 
